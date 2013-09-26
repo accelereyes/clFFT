@@ -2502,7 +2502,7 @@ namespace StockhamGenerator
 				str += "(";
 
 				// TODO : address this kludge
-				str += "__constant cb_t *cb __attribute__((max_constant_size(32))), ";
+				str += "__global cb_t *cb __attribute__((max_constant_size(32))), ";
 
 				// Function attributes
 				if(params.fft_placeness == CLFFT_INPLACE)
